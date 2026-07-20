@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Education</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Prompt',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#dff6ff,#b8e8fc,#7fd8ff,#4cb8ff);
+    background-size:400% 400%;
+    animation:bgMove 10s ease infinite;
+    color:white;
+}
+
+@keyframes bgMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+nav{
+    position:sticky;
+    top:0;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:18px;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(15px);
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#003366;
+}
+
+h1{
+    text-align:center;
+    margin:40px 0;
+    font-size:40px;
+}
+
+.timeline{
+    max-width:900px;
+    margin:auto;
+    position:relative;
+    padding:20px;
+}
+
+.timeline::before{
+    content:'';
+    position:absolute;
+    left:50%;
+    width:4px;
+    height:100%;
+    background:white;
+    transform:translateX(-50%);
+}
+
+.container{
+    position:relative;
+    width:50%;
+    padding:20px 40px;
+}
+
+.left{
+    left:0;
+}
+
+.right{
+    left:50%;
+}
+
+.card{
+    background:rgba(255,255,255,.18);
+    backdrop-filter:blur(20px);
+    border-radius:25px;
+    padding:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.card h2{
+    margin-bottom:10px;
+}
+
+.circle{
+    position:absolute;
+    width:22px;
+    height:22px;
+    background:white;
+    border-radius:50%;
+    top:35px;
+    right:-11px;
+}
+
+.right .circle{
+    left:-11px;
+}
+
+img{
+    width:100%;
+    border-radius:15px;
+    margin-bottom:15px;
+}
+
+@media(max-width:768px){
+
+.timeline::before{
+left:20px;
+}
+
+.container{
+width:100%;
+left:0;
+padding-left:60px;
+padding-right:20px;
+margin-bottom:30px;
+}
+
+.circle{
+left:9px;
+}
+
+.right{
+left:0;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="personal.html">Personal</a>
+<a href="education.html">Education</a>
+<a href="activity.html">Activity</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<h1>🎓 Education</h1>
+
+<div class="timeline">
+
+<div class="container left">
+
+<div class="card">
+
+<img src="images/primary.jpg">
+
+<h2>🏫 ระดับประถมศึกษา</h2>
+
+<p><strong>โรงเรียน :</strong> โรงเรียนอนุบาลวัดอู่ตะเภา</p>
+
+<p><strong>ปีการศึกษา :</strong> 2558 - 2563</p>
+
+<p>สำเร็จการศึกษาระดับประถมศึกษา พร้อมเข้าร่วมกิจกรรมของโรงเรียนอย่างต่อเนื่อง</p>
+
+</div>
+
+<div class="circle"></div>
+
+</div>
+
+<div class="container right">
+
+<div class="card">
+
+<img src="images/junior.jpg">
+
+<h2>📘 ระดับมัธยมศึกษาตอนต้น</h2>
+
+<p><strong>โรงเรียน :</strong> โรงเรียนพานทอง</p>
+
+<p><strong>ปีการศึกษา :</strong> 2564 - 2566</p>
+
+<p>พัฒนาทักษะด้านวิชาการและเข้าร่วมกิจกรรมต่าง ๆ ของโรงเรียน</p>
+
+</div>
+
+<div class="circle"></div>
+
+</div>
+
+<div class="container left">
+
+<div class="card">
+
+<img src="images/highschool.jpg">
+
+<h2>🎓 ระดับมัธยมศึกษาตอนปลาย</h2>
+
+<p><strong>โรงเรียน :</strong> โรงเรียนพานทอง</p>
+
+<p><strong>ปีการศึกษา :</strong> 2567 - ปัจจุบัน</p>
+
+<p><strong>แผนการเรียน :</strong>สายศิลป์ภาษา จีน - อังกฤษ</p>
+
+<p><strong>GPA :</strong> 3.80</p>
+
+<p>กำลังศึกษาระดับชั้นมัธยมศึกษาปีที่ 6 และพัฒนาเว็บไซต์ Portfolio สำหรับการศึกษาต่อ</p>
+
+</div>
+
+<div class="circle"></div>
+
+</div>
+
+</div>
+
+</body>
+</html>
