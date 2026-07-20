@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Prompt',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#dff6ff,#b8e8fc,#7fd8ff,#4cb8ff);
+background-size:400% 400%;
+animation:bgMove 10s ease infinite;
+color:white;
+}
+
+@keyframes bgMove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+nav{
+position:sticky;
+top:0;
+display:flex;
+justify-content:center;
+gap:30px;
+padding:18px;
+background:rgba(255,255,255,.15);
+backdrop-filter:blur(15px);
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#003366;
+}
+
+.container{
+max-width:1000px;
+margin:60px auto;
+padding:20px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+.card{
+background:rgba(255,255,255,.18);
+backdrop-filter:blur(20px);
+border-radius:25px;
+padding:35px;
+box-shadow:0 15px 30px rgba(0,0,0,.15);
+}
+
+h1{
+text-align:center;
+margin-top:40px;
+font-size:42px;
+}
+
+.info p{
+margin:18px 0;
+font-size:18px;
+}
+
+.social{
+margin-top:25px;
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.social a{
+text-decoration:none;
+background:white;
+color:#0099ff;
+padding:10px 18px;
+border-radius:30px;
+font-weight:bold;
+transition:.3s;
+}
+
+.social a:hover{
+background:#0099ff;
+color:white;
+}
+
+input,textarea{
+width:100%;
+padding:14px;
+margin:12px 0;
+border:none;
+border-radius:15px;
+outline:none;
+font-size:16px;
+}
+
+textarea{
+height:140px;
+resize:none;
+}
+
+button{
+width:100%;
+padding:15px;
+border:none;
+border-radius:30px;
+background:white;
+color:#0099ff;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:#0099ff;
+color:white;
+}
+
+footer{
+text-align:center;
+padding:30px;
+opacity:.8;
+}
+
+@media(max-width:768px){
+
+.container{
+grid-template-columns:1fr;
+}
+
+nav{
+gap:15px;
+font-size:14px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="personal.html">Personal</a>
+<a href="education.html">Education</a>
+<a href="activity.html">Activity</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<h1>📞 Contact Me</h1>
+
+<div class="container">
+
+<div class="card">
+
+<div class="info">
+
+<h2>🩵 ช่องทางติดต่อ</h2>
+
+<p>👤 ชื่อ : นายกรภัทร เเสงพลู</p>
+
+<p>🏫 โรงเรียน : พานทอง</p>
+
+<p>📧 Email : korapat@email.com</p>
+
+<p>📱 โทรศัพท์ : 088-054-6905</p>
+
+<p>📍 จังหวัด : จังหวัดชลบุรี</p>
+
+<div class="social">
+
+<a href="#">Facebook</a>
+
+<a href="#">Instagram</a>
+
+<a href="#">GitHub</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>💌 Send Message</h2>
+
+<form>
+
+<input type="text" placeholder="กรภัทร เเสงพลู
+">
+
+<input type="email" placeholder="korapat@email.com">
+
+<textarea placeholder="พิมพ์ข้อความ..."></textarea>
+
+<button type="submit">Send Message 🩵</button>
+
+</form>
+
+</div>
+
+</div>
+
+<footer>
+
+🪼 Thank you for visiting my Portfolio 🩵
+
+</footer>
+
+</body>
+</html>
