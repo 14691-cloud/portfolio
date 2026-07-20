@@ -1,47 +1,229 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>ประวัติส่วนตัว</title>
-</head>
-<body>
-<h1>ประวัติส่วนตัว</h1>
-<img src="images/กรภัทร.webp" width="200">    
-<p>
-  ชื่อ นายกรภัทร เเสงพลู<br>
-  ชื่อเล่น ไนท์<br>
-  วันเกิด 24 กุมภาพันธ์ 2551<br>
-  อายุ 19<br>
-</p>
-<p>โรงเรียนพานทอง</p>
-</body>
-</html>
-<!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <title>About Me | ประวัติส่วนตัว</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav>
-        <div class="logo">MY PORTFOLIO</div>
-        <ul>
-            <li><a href="index.html">หน้าหลัก</a></li>
-            <li><a href="personal.html" class="active">ประวัติส่วนตัว</a></li>
-            <li><a href="education.html">การศึกษา</a></li>
-            <li><a href="skills.html">ทักษะ</a></li>
-            <li><a href="activities.html">ผลงาน</a></li>
-            <li><a href="contact.html">ติดต่อ</a></li>
-        </ul>
-    </nav>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal</title>
 
-    <div class="container">
-        <h2><span class="highlight">ABOUT</span> ME</h2>
-        <div class="card">
-            <h3>ข้อมูลส่วนตัว</h3>
-            <p style="margin-top: 15px;"><strong>ชื่อ-นามสกุล:</strong> นายสมชาย สายลุย</p>
-            <p><strong>ชื่อเล่น:</strong> นนท์</p>
-            <p><strong>คติประจำใจ:</strong> "โค้ดไม่มีคำว่าทำไม่ได้ มีแค่ยังไม่ได้แก้บัก"</p>
-            <p style="margin-top: 10px; color: #94a3b8;">ผมเป็นคนสนใจในเทคโนโลยี ชอบค้นหาสิ่งใหม่ๆ และพร้อมที่จะพัฒนาตัวเองในทุกๆ วัน งานอดิเรกคือการเขียนโค้ดและประกอบคอมพิวเตอร์ครับ</p>
-        </div>
-    </div>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Prompt',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#dff6ff,#b8e8fc,#7fd8ff,#4cb8ff);
+    background-size:400% 400%;
+    animation:bgMove 10s ease infinite;
+    color:white;
+}
+
+@keyframes bgMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+nav{
+    position:sticky;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:18px;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(15px);
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#003366;
+}
+
+.container{
+    max-width:1000px;
+    margin:50px auto;
+    padding:20px;
+}
+
+.card{
+    background:rgba(255,255,255,.18);
+    backdrop-filter:blur(20px);
+    border-radius:30px;
+    padding:35px;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.profile{
+    display:flex;
+    flex-wrap:wrap;
+    gap:40px;
+    align-items:center;
+}
+
+.profile img{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid white;
+}
+
+.info{
+    flex:1;
+}
+
+.info h1{
+    margin-bottom:15px;
+}
+
+.info p{
+    margin:10px 0;
+    font-size:18px;
+}
+
+.skills{
+    margin-top:40px;
+}
+
+.skills h2{
+    margin-bottom:20px;
+}
+
+.skill{
+    margin-bottom:20px;
+}
+
+.bar{
+    background:rgba(255,255,255,.3);
+    border-radius:20px;
+    overflow:hidden;
+    height:20px;
+}
+
+.fill{
+    height:100%;
+    background:white;
+    border-radius:20px;
+}
+
+.footer{
+    text-align:center;
+    padding:30px;
+    opacity:.8;
+}
+
+@media(max-width:768px){
+    .profile{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav{
+        gap:15px;
+        font-size:14px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="personal.html">Personal</a>
+<a href="education.html">Education</a>
+<a href="activity.html">Activity</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+
+<div class="card">
+
+<div class="profile">
+
+<img src="images/profile.jpg" alt="Profile">
+
+<div class="info">
+
+<h1>👤 ข้อมูลส่วนตัว</h1>
+
+<p><strong>ชื่อ :</strong> นายกรภัทร เเสงพลู</p>
+
+<p><strong>ชื่อเล่น :</strong> ไนท์</p>
+
+<p><strong>วันเกิด :</strong> 4 กุมภาพันธ์ 2551</p>
+
+<p><strong>อายุ :</strong> 18 ปี</p>
+
+<p><strong>โรงเรียน :</strong> พานทอง</p>
+
+<p><strong>แผนการเรียน :</strong>สายศิลป์-ภาษา</p>
+
+<p><strong>งานอดิเรก :</strong> ดูหนัง ฟังเพลง อ่านหนังสือการ์ตูน เล่นกีฬา เล่นโทรศัพท์ เล่นเกม 
+</p>
+
+<p><strong>ความสามารถ :</strong> thai , English , Chinese , France , German , Gaslighting </p>
+
+<p><strong>เป้าหมาย :</strong> ศึกษาต่อด้านมนุษย์ศาสตร์ , อักษรศาสตร์</p>
+
+</div>
+
+</div>
+
+<div class="skills">
+
+<h2>💻 Skills</h2>
+
+<div class="thai">
+HTML
+<div class="bar">
+<div class="fill" style="width:90%"></div>
+</div>
+</div>
+
+<div class="English">
+CSS
+<div class="bar">
+<div class="fill" style="width:85%"></div>
+</div>
+</div>
+
+<div class="Chinese">
+JavaScript
+<div class="bar">
+<div class="fill" style="width:70%"></div>
+</div>
+</div>
+
+<div class="France">
+Python
+<div class="bar">
+<div class="fill" style="width:75%"></div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+🩵 My Portfolio Website | 2026
+</div>
+
+</body>
+</html>
